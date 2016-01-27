@@ -4,6 +4,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+#slider-container{
+  width: 100%;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -13,7 +16,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 
@@ -28,13 +31,39 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 60px;
 
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 900;
+
+  .nav{
+    padding-right: 30px;
+  }
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+    line-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+
+  h3 img{
+    height: 30px;
+    margin-bottom: 9px;
+  }
+  h3 p {
+    font-size: 8pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -70,7 +99,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    //max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -91,3 +120,25 @@ body {
     border-bottom: 0;
   }
 }
+
+#slide_1_factors{
+  .text1{
+    font: bold 100px/120px 'Lato', Verdana, Helvetica, sans-serif;
+    text-transform:uppercase;
+    color:#FFFFFF;
+    text-shadow:#6f8e06 1px 1px 0px;
+  }
+  .text2{
+    font: bold 70px/86px 'Lato', Verdana, Helvetica, sans-serif;
+    text-transform:uppercase;
+    color:#FFFFFF;
+    text-shadow:#6f8e06 1px 1px 0px;
+  }
+  .text3{
+    font: bold 100px/120px 'Lato', Verdana, Helvetica, sans-serif;
+    text-transform:uppercase;
+    color:#FFFFFF;
+    text-shadow:#6f8e06 1px 1px 0px;
+  }
+}
+
