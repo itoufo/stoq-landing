@@ -144,6 +144,25 @@ body {
 
 #tab-container{
   .sky-tab-content-1 {
+    background: url("../images/AdobeStock_11261296.jpeg") no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    .typography{
+      padding: 10px;
+      font-size: 12pt;
+      background-color: rgba(255,255,255,0.5);
+      h2{
+        $font-size: 16pt;
+        font-size: $font-size;
+        .font-size-large{
+          font-weight: bold;
+          font-size: $font-size * 1.25;
+        }
+      }
+    }
+  }
+
+  .sky-tab-content-2 {
     background: url("../images/AdobeStock_66653699.jpeg") no-repeat;
     background-position: center center;
     background-size: 100%;
