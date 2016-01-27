@@ -142,3 +142,34 @@ body {
   }
 }
 
+#tab-container{
+  .sky-tab-content-1 {
+    background: url("../images/AdobeStock_66653699.jpeg") no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    .typography{
+      padding: 10px;
+      font-size: 12pt;
+      background-color: rgba(255,255,255,0.5);
+      .efficient{
+        background: linear-gradient(left, rgba(255,255,255,0.2), rgba(251,176,59,0.2));
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+      .substantial{
+        background: linear-gradient(right, rgba(255,255,255,0.2), rgba(0,255,0,0.2));
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+
+      h2{
+        $font-size: 16pt;
+        font-size: $font-size;
+        .font-size-large{
+          font-weight: bold;
+          font-size: $font-size * 1.25;
+        }
+      }
+    }
+  }
+}
