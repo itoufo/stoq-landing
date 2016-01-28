@@ -69,9 +69,12 @@ body {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
+  margin-top: 30px;
+  padding: 20px;
+  color: #fff;
   border-top: 1px solid #e5e5e5;
+  background-color: sandybrown;
+  width: 100%
 }
 
 .container-narrow > hr {
@@ -100,14 +103,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     //max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   /* Space out the masthead */
@@ -143,51 +138,62 @@ body {
 }
 
 #tab-container{
-  .sky-tab-content-1 {
-    background: url("../images/AdobeStock_11261296.jpeg") no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    .typography{
-      padding: 10px;
-      font-size: 12pt;
-      background-color: rgba(255,255,255,0.5);
-      h2{
-        $font-size: 16pt;
-        font-size: $font-size;
-        .font-size-large{
-          font-weight: bold;
-          font-size: $font-size * 1.25;
-        }
+  .typography{
+    padding: 10px;
+    font-size: 12pt;
+    background-color: rgba(255,255,255,0.5);
+    ul li:before {
+      content: none;
+    }
+    h1{
+      margin-bottom: 5px;
+    }
+    h2{
+      $font-size: 16pt;
+      font-size: $font-size;
+      .font-size-large {
+        font-weight: bold;
+        font-size: $font-size * 1.25;
       }
+    }
+    h3{
+      font-size: 14pt;
+    }
+    p {
+      margin-top: 0px;
+    }
+    li > p{
+
     }
   }
 
+  .sky-tab-content-1 {
+    background: url("../images/AdobeStock_726457472.jpg") no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
+
   .sky-tab-content-2 {
-    background: url("../images/AdobeStock_66653699.jpeg") no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    background: url("../images/AdobeStock_66653699.jpg") no-repeat;
+    background-position: right center;
+    background-size: cover;
     .typography{
-      padding: 10px;
-      font-size: 12pt;
-      background-color: rgba(255,255,255,0.5);
       .efficient{
         background: linear-gradient(left, rgba(255,255,255,0.2), rgba(251,176,59,0.2));
-        padding-right: 8px;
-        padding-left: 8px;
+        padding-top: 2%;
+        padding-left: 5%;
+        > p {
+          font-size: 11pt;
+        }
       }
       .substantial{
         background: linear-gradient(right, rgba(255,255,255,0.2), rgba(0,255,0,0.2));
-        padding-right: 8px;
-        padding-left: 8px;
-      }
-
-      h2{
-        $font-size: 16pt;
-        font-size: $font-size;
-        .font-size-large{
-          font-weight: bold;
-          font-size: $font-size * 1.25;
+        padding-top: 2%;
+        padding-left: 5%;
+        > p {
+          font-size: 11pt;
         }
+
       }
     }
   }
