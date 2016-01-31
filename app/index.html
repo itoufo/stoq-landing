@@ -16,6 +16,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/bower_components/jquery.avgrund/style/avgrund.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -474,7 +475,15 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
       </ul>
     </div>
     <!--/ tabs -->
+
   </div>
+
+  <!-- Popups -->
+  <a href="#" id="popup1">
+    asdfasdf
+  </a>
+  <!-- /Popups -->
+
   <div class="footer">
     <p><span class="glyphicon glyphicon glyphicon-copyright-mark"></span> Walker Co., Ltd.</p>
   </div>
@@ -482,6 +491,7 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
   <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!--<script src="/bower_components/jquery.avgrund/jquery.avgrund.js"></script>-->
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -593,9 +603,11 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
       })(jQuery);
 
       $(function() {
-        $(window).scroll(function () {
+          $(window).scroll(function () {
+
           var window_top = $(this).scrollTop();
-          debug("window:: " + window_top);
+
+          debug("window:: " + window_topp);
           $("#tab-container > .sky-tabs >  ul > li").each(function(){
             var $self = $(this);
             var content_top = $(this).offset().top;
@@ -618,5 +630,26 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
         });
       });
     </script>
+
+    <!--<script>-->
+      <!--$(function() {-->
+        <!--$('#popup1').avgrund({-->
+          <!--width: 380, // max is 640px-->
+          <!--height: 280, // max is 350px-->
+          <!--holderClass: 'popup1',-->
+          <!--showClose: true,-->
+          <!--showCloseText: 'Close',-->
+          <!--enableStackAnimation: true,-->
+          <!--onBlurContainer: '.container',-->
+          <!--windowScrollable: true,-->
+          <!--template: '<p>So implement your design and place content here! If you want to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>' +-->
+          <!--'<div>' +-->
+          <!--'<a href="http://github.com/voronianski/jquery.avgrund.js" target="_blank" class="github">Avgrund on Github</a>' +-->
+          <!--'<a href="http://twitter.com/voronianski" target="_blank" class="twitter">Twitter</a>' +-->
+          <!--'<a href="http://dribbble.com/voronianski" target="_blank" class="dribble">Dribbble</a>' +-->
+          <!--'</div>'-->
+        <!--});-->
+      <!--});-->
+    <!--</script>-->
   </body>
 </html>
