@@ -15,7 +15,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 /* Space out content a bit */
+html {
+  background-color: #fff;
+}
 body {
+  background-color: #fff;
   padding-top: 60px;
   padding-bottom: 20px;
 }
