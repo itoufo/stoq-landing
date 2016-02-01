@@ -646,10 +646,7 @@
           onBlurContainer: '.container',
           windowScrollable: true,
           useTemplateTag: true,
-          templateTag: '#popup-1',
-          activatedCallback: function(){
-            $("#popup-1").mCustomScrollbar();
-          }
+          templateTag: '#popup-1'
         });
         $('#popup2').avgrund({
           width: 640, // max is 640px
@@ -693,7 +690,15 @@
     <script>
       $(function(){
         $(window).load(function(){
-          $("#popup-1").mCustomScrollbar();
+          $("#popup-1").mCustomScrollbar({
+            scrollInertia: 500,          //スクロール加速度 OSデフォルトと異なると使いにくいので0
+            autoHideScrollbar: false,  //マウスオーバーしていないときにスクロールバーを隠すか お好みで
+            scrollButtons: {
+              enable: true,                    //ボタンを出すか。個人的には不要（falseにしたら以下は指定不要）
+              scrollType: "continuous",  //ボタンを押してる間だけ進む
+            },
+            theme: "dark-thin"                     //テーマを選ぶ。 CSSでカスタマイズする場合は不要
+          });
         });
       });
     </script>
