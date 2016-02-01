@@ -15,7 +15,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 /* Space out content a bit */
+html {
+  background-color: #fff;
+}
 body {
+  background-color: #fff;
   padding-top: 60px;
   padding-bottom: 20px;
 }
@@ -41,7 +45,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  z-index: 900;
+  z-index: 30;
 
   .nav{
     padding-right: 30px;
@@ -137,11 +141,27 @@ body {
   }
 }
 
+#slide_3_factors {
+  .text1 {
+    font: bold 100px/120px 'Lato', Verdana, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: #6f8e06 1px 1px 0px;
+  }
+  .text2 {
+    font: bold 90px/110px 'Lato', Verdana, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: #6f8e06 1px 1px 0px;
+  }
+}
+
+
 #tab-container{
   .typography{
     padding: 10px;
     font-size: 12pt;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.7);
     ul li:before {
       content: none;
     }
@@ -151,6 +171,7 @@ body {
     h2{
       $font-size: 16pt;
       font-size: $font-size;
+      font-weight: bold;
       .font-size-large {
         font-weight: bold;
         font-size: $font-size * 1.25;
@@ -158,25 +179,35 @@ body {
     }
     h3{
       font-size: 14pt;
+      font-weight: bold;
     }
     p {
       margin-top: 0px;
     }
     li > p{
-
+      font-size: 12pt;
+      margin-left: 5px;
     }
   }
 
   .sky-tab-content-1 {
-    background: url("../images/AdobeStock_726457472.jpg") no-repeat;
+    background: url("../images/book_with_knife.jpg") no-repeat;
     background-position: right center;
     background-size: cover;
+    li{
+      a{
+        color: #337ab7 !important;
+      }
+    }
   }
 
   .sky-tab-content-2 {
-    background: url("../images/AdobeStock_66653699.jpg") no-repeat;
+    background: url("../images/time_and_money.jpg") no-repeat;
     background-position: right center;
     background-size: cover;
+    li{
+      margin-left: 0px;
+    }
     .typography{
       .efficient{
         background: linear-gradient(left, rgba(255,255,255,0.2), rgba(251,176,59,0.2));
@@ -197,4 +228,7 @@ body {
       }
     }
   }
+}
+.avgrund-popin{
+  padding-top: 25px !important;
 }

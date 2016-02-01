@@ -12,10 +12,12 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/bower_components/jquery.avgrund/style/avgrund.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -55,433 +57,440 @@
     </script>
   </head>
   <body>
-  <!--[if lt IE 10]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <h3 class="text-muted">
-      <img src="images/logo.png" />
-      <p>実質と効率に特化した学習支援ツール</p>
-    </h3>
-  </div>
-
-  <div id="bannerscollection_zoominout_majestic">
-    <div class="myloader"></div>
-    <!-- CONTENT -->
-
-    <ul class="bannerscollection_zoominout_list">
-
-      <li data-initialZoom="1" data-finalZoom="0.78"  data-text-id="#slide_1_factors" data-horizontalPosition="left" data-verticalPosition="top" data-bottom-thumb="images/majesticFullWidth/thumbs/01_majestic.jpg" >
-        <img src="images/majesticFullWidth/01_majestic.jpg" alt="" width="2500" height="782" /></li>
-
-      <li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText2" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/02_majestic.jpg" data-link="http://codecanyon.net/user/LambertGroup" data-target="_blank">
-        <img src="images/majesticFullWidth/02_majestic.jpg" alt="" width="2500" height="782" /></li>
-
-      <li  data-initialZoom="1" data-finalZoom="0.78" data-text-id="#slide_3_factors" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/03_majestic.jpg" data-horizontalPosition="center" data-verticalPosition="center" data-target="_blank">
-        <img src="images/majesticFullWidth/03_majestic.jpg" alt="" width="2500" height="782" /></li>
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
 
-      <!--<li data-initialZoom="1" data-finalZoom="0.78" data-horizontalPosition="left" data-verticalPosition="bottom" data-duration="12" data-bottom-thumb="images/majesticFullWidth/thumbs/04_majestic.jpg"  data-text-id="#bannerscollection_zoominout_photoText4" data-video="true">-->
-        <!--<img src="images/majesticFullWidth/04_majestic.jpg" alt="" width="2500" height="782" />-->
-        <!--<iframe width="100%" height="100%" src="http://www.youtube.com/embed/2muxrT5_a6E" frameborder="0" allowfullscreen></iframe></li>-->
-
-      <!--<li data-initialZoom="1" data-finalZoom="0.78" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/05_majestic.jpg" data-text-id="#bannerscollection_zoominout_photoText5" >-->
-        <!--<img src="images/majesticFullWidth/05_majestic.jpg" alt="" width="2500" height="782" />-->
-      <!--</li>-->
-
-      <!--<li data-
-initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/06_majestic.jpg" data-text-id="#bannerscollection_zoominout_photoText6">-->
-        <!--<img src="images/majesticFullWidth/06_majestic.jpg" alt="" width="2500" height="782" />-->
-      <!--</li>-->
-
-      <!--<li data-initialZoom="0.95" data-finalZoom="0.78" data-duration="15" data-bottom-thumb="images/majesticFullWidth/thumbs/07_majestic.jpg" data-text-id="#bannerscollection_zoominout_photoText7">-->
-        <!--<img src="images/majesticFullWidth/07_majestic.jpg" alt="" width="2500" height="782" />-->
-      <!--</li>-->
-
-      <!--<li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText8" data-bottom-thumb="images/majesticFullWidth/thumbs/08_majestic.jpg" ><img src="images/majesticFullWidth/08_majestic.jpg" alt="" width="2500" height="782" /></li>-->
-
-    </ul>
-
-
-
-    <!-- TEXTS -->
-    <div id="slide_1_factors" class="bannerscollection_zoominout_texts">
-      <div class="bannerscollection_zoominout_text_line text1"
-           data-initial-left="2000"
-           data-initial-top="200"
-           data-final-left="1020"
-           data-final-top="200"
-           data-duration="0.5"
-           data-fade-start="50"
-           data-intermediate-left="1020"
-           data-intermediate-top="-500"
-           data-intermediate-duration="0.5"
-           data-intermediate-delay="1.5"
-           data-intermediate-easing="easeOutBack">
-        やればできる
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line text2"
-           data-initial-left="700"
-           data-initial-top="170"
-           data-final-left="700"
-           data-final-top="170"
-           data-duration="0.5"
-           data-initial-scale="6"
-           data-fade-start="0"
-           data-delay="2.5"
-           data-intermediate-easing="easeInBack">
-        でも、やり方が間違っていると
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line text3"
-           data-initial-left="-500"
-           data-initial-top="300"
-           data-final-left="1320"
-           data-final-top="300"
-           data-duration="0.8"
-           data-fade-start="0"
-           data-delay="2.5"
-           data-easing="easeInBack">
-        できない。
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line"
-           data-initial-left="-500"
-           data-initial-top="0"
-           data-final-left="0"
-           data-final-top="0"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0"
-           data-easing="swing">
-        <img src="images/girl.png" alt="" width="1000" height="666" />
-      </div>
-
-    </div> <!--End First Slide Texts-->
-
-
-
-
-    <div id="bannerscollection_zoominout_photoText2" class="bannerscollection_zoominout_texts">
-      <div class="bannerscollection_zoominout_text_line"
-           data-initial-left="-500"
-           data-initial-top="0"
-           data-final-left="800"
-           data-final-top="100"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0"
-           data-easing="swing">
-        <img src="images/arrow.png"  alt="" width="1000" height="485" />
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement21FW_majestic"
-           data-initial-left="510"
-           data-initial-top="105"
-           data-initial-skew="70deg,0deg"
-           data-final-skew="0deg,0deg"
-           data-final-left="150"
-           data-final-top="105"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0">
-        問題演習を通した確実な成長！
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement22FW_majestic"
-           data-initial-left="513"
-           data-initial-top="75"
-           data-final-left="150"
-           data-final-top="75"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.3">
-        Certain growth through the problem practice
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement23FW_majestic"
-           data-initial-left="0"
-           data-initial-top="180"
-           data-initial-skew="-50deg,0deg"
-           data-final-skew="0deg,0deg"
-           data-final-left="150"
-           data-final-top="180"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.3">
-        今すぐStoQを使ってみよう！！
-      </div>
-    </div><!--End Second Slide Texts-->
-
-
-    <div id="slide_3_factors" class="bannerscollection_zoominout_texts">
-      <div class="bannerscollection_zoominout_text_line text1"
-           data-initial-left="2000"
-           data-initial-top="180"
-           data-final-left="500"
-           data-final-top="180"
-           data-intermediate-easing="easeOutBack">
-        日々の努力は
-      </div>
-      <div class="bannerscollection_zoominout_text_line text2"
-           data-initial-left="2000"
-           data-initial-top="350"
-           data-final-left="1020"
-           data-final-top="350"
-           data-duration="0.5"
-           data-fade-start="50"
-           data-intermediate-easing="easeOutBack">
-        未来の評価
-      </div>
-      <div class="bannerscollection_zoominout_text_line image1"
-           data-initial-left="30"
-           data-initial-top="0"
-           data-final-left="3"
-           data-final-top="0"
-           data-duration="0.5"
-           data-intermediate-eaIchiro_Suzuki_on_May_10,_2011.pngsing="easeInBack">
-        <img src="images/ichiro.png" width="800" height="1148">
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line image2"
-           data-initial-left="1600"
-           data-initial-top="-400"
-           data-final-left="1600"
-           data-final-top="350"
-           data-duration="0.8"
-           data-delay="0.5"
-           data-easing="easeInQuart">
-        <img src="images/ball.png" width="200" height="211">
-      </div>
-    </div><!--End Third Slide Texts-->
-
-
-
-    <div id="bannerscollection_zoominout_photoText5" class="bannerscollection_zoominout_texts">
-      <div class=" textElement50FW_majestic"
-           data-initial-left="0"
-           data-initial-top="0"
-           data-final-left="1080"
-           data-final-top="0"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.13">
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement51FW_majestic"
-           data-initial-left="0"
-           data-initial-top="50"
-           data-final-left="1100"
-           data-final-top="50"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.5">
-        Enjoy This Ultra-Smooth<br /><a href="http://codecanyon.net/user/LambertGroup" target="_blank">Zoom In/Out</a> Effect<br />customizable with many<br />parameters
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement52FW_majestic"
-           data-initial-left="0"
-           data-initial-top="220"
-           data-final-left="1100"
-           data-final-top="220"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.3">
-        We proudly announce you <br /><span class="highlight1">the huge updates</span> we made for this collection of sliders:<br />- Hardware Accelerated CSS3 Transitions for Layers<br />- Improved KenBurns Effect<br />- Parametters for Initial Intermediate & Exit Moves<br /><br /><a href="http://codecanyon.net/user/LambertGroup" target="_blank">Discover more FEATURES!</a>
-      </div>
-    </div> <!--End Fifth Slide Texts-->
-    <div id="bannerscollection_zoominout_photoText7" class="bannerscollection_zoominout_texts">
-      <div class="bannerscollection_zoominout_text_line textElement70FW_majestic"
-           data-initial-left="0"
-           data-initial-top="495"
-           data-final-left="0"
-           data-final-top="495"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.13">
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement71FW_majestic"
-           data-initial-left="300"
-           data-initial-top="505"
-           data-final-left="50"
-           data-final-top="505"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.5">
-        Ultra-Smooth <a href="http://codecanyon.net/user/LambertGroup" target="_blank">Zoom In/Out</a> Effect customizable<br /> with many parameters
-      </div>
-    </div><!--End Seventh Slide Texts-->
-
-
-
-    <div id="bannerscollection_zoominout_photoText8" class="bannerscollection_zoominout_texts">
-      <div class="bannerscollection_zoominout_text_line textElement81FW_majestic"
-           data-initial-left="480"
-           data-initial-top="370"
-           data-final-left="200"
-           data-final-top="370"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0">
-        Animated text from any direction
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement82FW_majestic"
-           data-initial-left="0"
-           data-initial-top="405"
-           data-final-left="200"
-           data-final-top="405"
-           data-duration="0.5"
-           data-fade-start="0"
-           data-delay="0.3">
-        top, bottom, left and right
-      </div>
-
-      <div class="bannerscollection_zoominout_text_line textElement83FW_majestic"
-           data-initial-left="50"
-           data-initial-top="465"
-           data-final-left="200"
-           data-final-top="465"
-           data-duration="1"
-           data-fade-start="0"
-           data-delay="0.5">
-        Any color, CSS and HTML formated
-      </div>
-    </div> <!--End Eighth Slide Texts-->
-  </div>
-  <!-- End Eighth Slider!! -->
-
-  <!-- Start Tabs!!!! -->
-  <div id="tab-container" class="container">
-
-    <!-- tabs -->
-    <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-anim-flip sky-tabs-response-to-icons">
-      <input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
-      <label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>StoQとは</span></span></label>
-
-      <input type="radio" name="sky-tabs"  id="sky-tab2" class="sky-tab-content-2">
-      <label for="sky-tab2"><span><span><i class="fa fa-bolt"></i>実質＆効率の追求</span></span></label>
-
-      <input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
-      <label for="sky-tab3"><span><span><i class="fa fa-picture-o"></i>忘れないためのお助け機能</span></span></label>
-
-      <input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
-      <label for="sky-tab4"><span><span><i class="fa fa-cogs"></i>知識を売ってみる！</span></span></label>
-
-      <ul>
-        <li class="sky-tab-content-1">
-          <div class="typography">
-            <h1>StoQにはいろんな顔があります</h1>
-            <ul>
-              <li><h2>人工知能搭載問題集</h2></li>
-              <li><h2>問題のプラットフォーム</h2></li>
-              <li><h2>便利なメモ帳</h2></li>
-              <li><h2>最先端LMS</h2></li>
-            </ul>
-          </div>
-        </li>
-        <li class="sky-tab-content-2">
-          <div class="typography">
-            <h1>実質＆効率の追求</h1>
-            <div class="row">
-              <div class="col-md-6 substantial">
-                <h2 class="text-left">度が過ぎるほどの <span class="font-size-large">実質的評価</span></h2>
-                <p>StoQは徹底的な統計評価によって、情報の陳腐化を撲滅します。</p>
-                <ul>
-                  <li><h3>実質的な難易度評価</h3>
-                    <p>
-                      StoQの人工知能が問題の難易度を常に計算し続けます。<br>
-                      作者の主観によらない客観的な難易度がわかるので、自分の実力がわかって達成感UP!
-                    </p>
-                  </li>
-
-                  <li><h3>実質的な実力評価</h3>
-                    <p>
-                      StoQは正解した問題の難易度からあなたの実質敵な実力を分析します。<br>
-                      ある日100点を取れただけでは評価されません。きちんと復習して記憶が定着したことや周りが解けない問題をといたこと、実際に価値のある学習が評価されます。
-                    </p>
-                  </li>
-                  <li><h3>意味のあるリマインド</h3>
-                    <p>
-                      すべての問をわざわざ復習させられるわけではありません。<br>
-                      より難しくて似ている問題を解けたなら、簡単な問題も解けるはず！忘却曲線を修正して後回しにできます。
-                    </p>
-                  </li>
-                  <li><h3>問題の鮮度検査</h3>
-                    <p>
-                      何年も前の問題はいつまでも正しいとは限りません。。<br>
-                      間違ったことや時代遅れの知識をいつまでも残さないように、問題の新鮮さを人工知能が判断します。
-                    </p>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="col-md-6 efficient">
-                <h2 class="text-left"><span class="font-size-large">最も効率的な</span> 学習支援</h2>
-                <p>StoQには最小の勉強時間で、最大限の知識を獲得するための支援機能が充実しています</p>
-                <ul>
-                  <li><h3>忘却曲線に沿った学習スケジュール提案</h3>
-                    <p>
-                      人間の記憶メカニズムに沿って、適切なタイミングでリマインドを送信。
-                      将来の目的や、過去の読書録も忘れたころに思い出させます。<br>
-                      必要なときに思い出せない経験も、大事な感動をいつの間にか忘れていることもなくなります！
-                    </p>
-                  <li><h3>忘れた頃アラート</h3>
-                    <p>
-                      StoQの人工知能が忘却曲線を解析、最適なタイミングでリマインドを送信します。<br>
-                      忘れた頃に声をかけてくれる、最高のパートナーになるはずです。
-                    </p>
-                  </li>
-                  </li>
-                  <li><h3>休憩時間も大事に</h3>
-                    <p>
-                      長い学習が続いた時には、ミニゲームやうんちく問題で一休み。<br>
-                      初頭効果と終末効果による記憶力強化を最大限に引き出します！
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-         </div>
-        </li>
-
-        <li class="sky-tab-content-3">
-          <div class="typography">
-            <h1>便利な機能</h1>
-            <p>Italian Renaissance polymath: painter, sculptor, architect, musician, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His genius, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. Leonardo has often been described as the archetype of the Renaissance Man, a man of "unquenchable curiosity" and "feverishly inventive imagination". He is widely considered to be one of the greatest painters of all time and perhaps the most diversely talented person ever to have lived. According to art historian Helen Gardner, the scope and depth of his interests were without precedent and "his mind and personality seem to us superhuman, the man himself mysterious and remote". Marco Rosci states that while there is much speculation about Leonardo, his vision of the world is essentially logical rather than mysterious, and that the empirical methods he employed were unusual for his time.</p>
-            <p>Born out of wedlock to a notary, Piero da Vinci, and a peasant woman, Caterina, at Vinci in the region of Florence, Leonardo was educated in the studio of the renowned Florentine painter, Verrocchio. Much of his earlier working life was spent in the service of Ludovico il Moro in Milan. He later worked in Rome, Bologna and Venice, and he spent his last years in France at the home awarded him by Francis I.</p>
-            <p class="text-right"><em>Find out more about Leonardo da Vinci from <a href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank">Wikipedia</a>.</em></p>
-          </div>
-        </li>
-
-        <li class="sky-tab-content-4">
-          <div class="typography">
-            <h1>自分の知識を商品に！</h1>
-            <p>German-born theoretical physicist who developed the general theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). While best known for his mass–energy equivalence formula E = mc2 (which has been dubbed "the world's most famous equation"), he received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect". The latter was pivotal in establishing quantum theory.</p>
-            <p>Near the beginning of his career, Einstein thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics with the laws of the electromagnetic field. This led to the development of his special theory of relativity. He realized, however, that the principle of relativity could also be extended to gravitational fields, and with his subsequent theory of gravitation in 1916, he published a paper on the general theory of relativity.</p>
-            <p>He continued to deal with problems of statistical mechanics and quantum theory, which led to his explanations of particle theory and the motion of molecules. He also investigated the thermal properties of light which laid the foundation of the photon theory of light. In 1917, Einstein applied the general theory of relativity to model the large-scale structure of the universe.</p>
-            <p class="text-right"><em>Find out more about Albert Einstein from <a href="http://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a>.</em></p>
-          </div>
-        </li>
+    <div class="header">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
+      <h3 class="text-muted">
+        <img src="images/logo.png" />
+        <p>実質と効率に特化した学習支援ツール</p>
+      </h3>
     </div>
-    <!--/ tabs -->
-  </div>
-  <div class="footer">
-    <p><span class="glyphicon glyphicon glyphicon-copyright-mark"></span> Walker Co., Ltd.</p>
-  </div>
+
+    <div id="bannerscollection_zoominout_majestic">
+      <div class="myloader"></div>
+      <!-- CONTENT -->
+
+      <ul class="bannerscollection_zoominout_list">
+
+        <li data-initialZoom="1" data-finalZoom="0.78"  data-text-id="#slide_1_factors" data-horizontalPosition="left" data-verticalPosition="top" data-bottom-thumb="images/majesticFullWidth/thumbs/01_majestic.jpg" >
+          <img src="images/majesticFullWidth/01_majestic.jpg" alt="" width="2500" height="782" /></li>
+
+        <li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText2" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/02_majestic.jpg" data-link="http://codecanyon.net/user/LambertGroup" data-target="_blank">
+          <img src="images/majesticFullWidth/02_majestic.jpg" alt="" width="2500" height="782" /></li>
+
+        <li  data-initialZoom="1" data-finalZoom="0.78" data-text-id="#slide_3_factors" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/03_majestic.jpg" data-horizontalPosition="center" data-verticalPosition="center" data-target="_blank">
+          <img src="images/majesticFullWidth/03_majestic.jpg" alt="" width="2500" height="782" /></li>
+
+
+        <!--<li data-initialZoom="1" data-finalZoom="0.78" data-horizontalPosition="left" data-verticalPosition="bottom" data-duration="12" data-bottom-thumb="images/majesticFullWidth/thumbs/04_majestic.jpg"  data-text-id="#bannerscollection_zoominout_photoText4" data-video="true">-->
+          <!--<img src="images/majesticFullWidth/04_majestic.jpg" alt="" width="2500" height="782" />-->
+          <!--<iframe width="100%" height="100%" src="http://www.youtube.com/embed/2muxrT5_a6E" frameborder="0" allowfullscreen></iframe></li>-->
+
+        <!--<li data-initialZoom="1" data-finalZoom="0.78" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/05_majestic.jpg" data-text-id="#bannerscollection_zoominout_photoText5" >-->
+          <!--<img src="images/majesticFullWidth/05_majestic.jpg" alt="" width="2500" height="782" />-->
+        <!--</li>-->
+
+        <!--<li data-
+  initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verticalPosition="center" data-bottom-thumb="images/majesticFullWidth/thumbs/06_majestic.jpg" data-text-id="#bannerscollection_zoominout_photoText6">-->
+          <!--<img src="images/majesticFullWidth/06_majestic.jpg" alt="" width="2500" height="782" />-->
+        <!--</li>-->
+
+        <!--<li data-initialZoom="0.95" data-finalZoom="0.78" data-duration="15" data-bottom-thumb="images/majesticFullWidth/thumbs/07_majestic.jpg" data-text-id="#bannerscollection_zoominout_photoText7">-->
+          <!--<img src="images/majesticFullWidth/07_majestic.jpg" alt="" width="2500" height="782" />-->
+        <!--</li>-->
+
+        <!--<li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText8" data-bottom-thumb="images/majesticFullWidth/thumbs/08_majestic.jpg" ><img src="images/majesticFullWidth/08_majestic.jpg" alt="" width="2500" height="782" /></li>-->
+
+      </ul>
+
+
+
+      <!-- TEXTS -->
+      <div id="slide_1_factors" class="bannerscollection_zoominout_texts">
+        <div class="bannerscollection_zoominout_text_line text1"
+             data-initial-left="2000"
+             data-initial-top="200"
+             data-final-left="1020"
+             data-final-top="200"
+             data-duration="0.5"
+             data-fade-start="50"
+             data-intermediate-left="1020"
+             data-intermediate-top="-500"
+             data-intermediate-duration="0.5"
+             data-intermediate-delay="1.5"
+             data-intermediate-easing="easeOutBack">
+          やればできる
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line text2"
+             data-initial-left="700"
+             data-initial-top="170"
+             data-final-left="700"
+             data-final-top="170"
+             data-duration="0.5"
+             data-initial-scale="6"
+             data-fade-start="0"
+             data-delay="2.5"
+             data-intermediate-easing="easeInBack">
+          でも、やり方が間違っていると
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line text3"
+             data-initial-left="-500"
+             data-initial-top="300"
+             data-final-left="770"
+             data-final-top="300"
+             data-duration="0.8"
+             data-fade-start="0"
+             data-delay="2.5"
+             data-easing="easeInBack">
+          いつまでもできない。
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line"
+             data-initial-left="-500"
+             data-initial-top="0"
+             data-final-left="0"
+             data-final-top="0"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0"
+             data-easing="swing">
+          <img src="images/girl.png" alt="" width="1000" height="666" />
+        </div>
+
+      </div> <!--End First Slide Texts-->
+
+
+
+
+      <div id="bannerscollection_zoominout_photoText2" class="bannerscollection_zoominout_texts">
+        <div class="bannerscollection_zoominout_text_line"
+             data-initial-left="-500"
+             data-initial-top="0"
+             data-final-left="800"
+             data-final-top="100"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0"
+             data-easing="swing">
+          <img src="images/arrow.png"  alt="" width="1000" height="485" />
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement21FW_majestic"
+             data-initial-left="510"
+             data-initial-top="105"
+             data-initial-skew="70deg,0deg"
+             data-final-skew="0deg,0deg"
+             data-final-left="150"
+             data-final-top="105"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0">
+          問題演習を通した確実な成長！
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement22FW_majestic"
+             data-initial-left="513"
+             data-initial-top="75"
+             data-final-left="150"
+             data-final-top="75"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.3">
+          Certain growth through the problem practice
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement23FW_majestic"
+             data-initial-left="0"
+             data-initial-top="180"
+             data-initial-skew="-50deg,0deg"
+             data-final-skew="0deg,0deg"
+             data-final-left="150"
+             data-final-top="180"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.3">
+          今すぐStoQを使ってみよう！！
+        </div>
+      </div><!--End Second Slide Texts-->
+
+
+      <div id="slide_3_factors" class="bannerscollection_zoominout_texts">
+        <div class="bannerscollection_zoominout_text_line text1"
+             data-initial-left="2000"
+             data-initial-top="180"
+             data-final-left="500"
+             data-final-top="180"
+             data-intermediate-easing="easeOutBack">
+          日々の努力は
+        </div>
+        <div class="bannerscollection_zoominout_text_line text2"
+             data-initial-left="2000"
+             data-initial-top="350"
+             data-final-left="1020"
+             data-final-top="350"
+             data-duration="0.5"
+             data-fade-start="50"
+             data-intermediate-easing="easeOutBack">
+          未来の評価
+        </div>
+        <div class="bannerscollection_zoominout_text_line image1"
+             data-initial-left="30"
+             data-initial-top="0"
+             data-final-left="3"
+             data-final-top="0"
+             data-duration="0.5"
+             data-intermediate-eaIchiro_Suzuki_on_May_10,_2011.pngsing="easeInBack">
+          <img src="images/ichiro.png" width="800" height="1148">
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line image2"
+             data-initial-left="1600"
+             data-initial-top="-400"
+             data-final-left="1600"
+             data-final-top="350"
+             data-duration="0.8"
+             data-delay="0.5"
+             data-easing="easeInQuart">
+          <img src="images/ball.png" width="200" height="211">
+        </div>
+      </div><!--End Third Slide Texts-->
+
+
+
+      <div id="bannerscollection_zoominout_photoText5" class="bannerscollection_zoominout_texts">
+        <div class=" textElement50FW_majestic"
+             data-initial-left="0"
+             data-initial-top="0"
+             data-final-left="1080"
+             data-final-top="0"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.13">
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement51FW_majestic"
+             data-initial-left="0"
+             data-initial-top="50"
+             data-final-left="1100"
+             data-final-top="50"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.5">
+          Enjoy This Ultra-Smooth<br /><a href="http://codecanyon.net/user/LambertGroup" target="_blank">Zoom In/Out</a> Effect<br />customizable with many<br />parameters
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement52FW_majestic"
+             data-initial-left="0"
+             data-initial-top="220"
+             data-final-left="1100"
+             data-final-top="220"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.3">
+          We proudly announce you <br /><span class="highlight1">the huge updates</span> we made for this collection of sliders:<br />- Hardware Accelerated CSS3 Transitions for Layers<br />- Improved KenBurns Effect<br />- Parametters for Initial Intermediate & Exit Moves<br /><br /><a href="http://codecanyon.net/user/LambertGroup" target="_blank">Discover more FEATURES!</a>
+        </div>
+      </div> <!--End Fifth Slide Texts-->
+      <div id="bannerscollection_zoominout_photoText7" class="bannerscollection_zoominout_texts">
+        <div class="bannerscollection_zoominout_text_line textElement70FW_majestic"
+             data-initial-left="0"
+             data-initial-top="495"
+             data-final-left="0"
+             data-final-top="495"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.13">
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement71FW_majestic"
+             data-initial-left="300"
+             data-initial-top="505"
+             data-final-left="50"
+             data-final-top="505"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.5">
+          Ultra-Smooth <a href="http://codecanyon.net/user/LambertGroup" target="_blank">Zoom In/Out</a> Effect customizable<br /> with many parameters
+        </div>
+      </div><!--End Seventh Slide Texts-->
+
+
+
+      <div id="bannerscollection_zoominout_photoText8" class="bannerscollection_zoominout_texts">
+        <div class="bannerscollection_zoominout_text_line textElement81FW_majestic"
+             data-initial-left="480"
+             data-initial-top="370"
+             data-final-left="200"
+             data-final-top="370"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0">
+          Animated text from any direction
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement82FW_majestic"
+             data-initial-left="0"
+             data-initial-top="405"
+             data-final-left="200"
+             data-final-top="405"
+             data-duration="0.5"
+             data-fade-start="0"
+             data-delay="0.3">
+          top, bottom, left and right
+        </div>
+
+        <div class="bannerscollection_zoominout_text_line textElement83FW_majestic"
+             data-initial-left="50"
+             data-initial-top="465"
+             data-final-left="200"
+             data-final-top="465"
+             data-duration="1"
+             data-fade-start="0"
+             data-delay="0.5">
+          Any color, CSS and HTML formated
+        </div>
+      </div> <!--End Eighth Slide Texts-->
+    </div>
+    <!-- End Eighth Slider!! -->
+
+    <!-- Start Tabs!!!! -->
+    <div id="tab-container" class="container">
+
+      <!-- tabs -->
+      <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-anim-flip sky-tabs-response-to-icons">
+        <input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+        <label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>StoQとは</span></span></label>
+
+        <input type="radio" name="sky-tabs"  id="sky-tab2" class="sky-tab-content-2">
+        <label for="sky-tab2"><span><span><i class="fa fa-bolt"></i>実質＆効率の追求</span></span></label>
+
+        <input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+        <label for="sky-tab3"><span><span><i class="fa fa-picture-o"></i>忘れないためのお助け機能</span></span></label>
+
+        <input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+        <label for="sky-tab4"><span><span><i class="fa fa-cogs"></i>知識を売ってみる！</span></span></label>
+
+        <ul>
+          <li class="sky-tab-content-1">
+            <div class="typography">
+              <h1>StoQにはいろんな顔があります</h1>
+              <ul>
+                <li><h2><a id="popup1" href="#">人工知能搭載問題集</a></h2></li>
+                <li><h2><a id="popup2" href="#">問題のプラットフォーム</a></h2></li>
+                <li><h2><a id="popup3" href="#">便利なメモ帳</a></h2></li>
+                <li><h2><a id="popup4" href="#">最先端LMS</a></h2></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sky-tab-content-2">
+            <div class="typography">
+              <h1>実質＆効率の追求</h1>
+              <div class="row">
+                <div class="col-md-6 substantial">
+                  <!--<h2 class="text-left">度が過ぎるほどの <span class="font-size-large">実質的評価</span></h2>-->
+                  <h2 class="text-left">度が過ぎるほどの実質的評価</h2>
+                  <p>StoQは徹底的な統計評価によって、情報の陳腐化を撲滅します。</p>
+                  <ul>
+                    <li><h3>実質的な難易度評価</h3>
+                      <p>
+                        StoQの人工知能が問題の難易度を常に計算し続けます。<br>
+                        作者の主観によらない客観的な難易度がわかるので、自分の実力がわかって達成感UP!
+                      </p>
+                    </li>
+
+                    <li><h3>実質的な実力評価</h3>
+                      <p>
+                        StoQは正解した問題の難易度からあなたの実質敵な実力を分析します。<br>
+                        ある日100点を取れただけでは評価されません。きちんと復習して記憶が定着したことや周りが解けない問題をといたこと、実際に価値のある学習が評価されます。
+                      </p>
+                    </li>
+                    <li><h3>意味のあるリマインド</h3>
+                      <p>
+                        すべての問をわざわざ復習させられるわけではありません。<br>
+                        より難しくて似ている問題を解けたなら、簡単な問題も解けるはず！忘却曲線を修正して後回しにできます。
+                      </p>
+                    </li>
+                    <li><h3>問題の鮮度検査</h3>
+                      <p>
+                        何年も前の問題はいつまでも正しいとは限りません。。<br>
+                        間違ったことや時代遅れの知識をいつまでも残さないように、問題の新鮮さを人工知能が判断します。
+                      </p>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="col-md-6 efficient">
+                  <!--<h2 class="text-left"><span class="font-size-large">最も効率的な</span> 学習支援</h2>-->
+                  <h2 class="text-left">最も効率的な学習支援</h2>
+                  <p>StoQには最小の勉強時間で、最大限の知識を獲得するための支援機能が充実しています</p>
+                  <ul>
+                    <li><h3>忘却曲線に沿った学習スケジュール提案</h3>
+                      <p>
+                        人間の記憶メカニズムに沿って、適切なタイミングでリマインドを送信。
+                        将来の目的や、過去の読書録も忘れたころに思い出させます。<br>
+                        必要なときに思い出せない経験も、大事な感動をいつの間にか忘れていることもなくなります！
+                      </p>
+                    <li><h3>忘れた頃アラート</h3>
+                      <p>
+                        StoQの人工知能が忘却曲線を解析、最適なタイミングでリマインドを送信します。<br>
+                        忘れた頃に声をかけてくれる、最高のパートナーになるはずです。
+                      </p>
+                    </li>
+                    </li>
+                    <li><h3>休憩時間も大事に</h3>
+                      <p>
+                        長い学習が続いた時には、ミニゲームやうんちく問題で一休み。<br>
+                        初頭効果と終末効果による記憶力強化を最大限に引き出します！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+           </div>
+          </li>
+
+          <li class="sky-tab-content-3">
+            <div class="typography">
+              <h1>便利な機能</h1>
+              <p>Italian Renaissance polymath: painter, sculptor, architect, musician, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His genius, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. Leonardo has often been described as the archetype of the Renaissance Man, a man of "unquenchable curiosity" and "feverishly inventive imagination". He is widely considered to be one of the greatest painters of all time and perhaps the most diversely talented person ever to have lived. According to art historian Helen Gardner, the scope and depth of his interests were without precedent and "his mind and personality seem to us superhuman, the man himself mysterious and remote". Marco Rosci states that while there is much speculation about Leonardo, his vision of the world is essentially logical rather than mysterious, and that the empirical methods he employed were unusual for his time.</p>
+              <p>Born out of wedlock to a notary, Piero da Vinci, and a peasant woman, Caterina, at Vinci in the region of Florence, Leonardo was educated in the studio of the renowned Florentine painter, Verrocchio. Much of his earlier working life was spent in the service of Ludovico il Moro in Milan. He later worked in Rome, Bologna and Venice, and he spent his last years in France at the home awarded him by Francis I.</p>
+              <p class="text-right"><em>Find out more about Leonardo da Vinci from <a href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank">Wikipedia</a>.</em></p>
+            </div>
+          </li>
+
+          <li class="sky-tab-content-4">
+            <div class="typography">
+              <h1>自分の知識を商品に！</h1>
+              <p>German-born theoretical physicist who developed the general theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). While best known for his mass–energy equivalence formula E = mc2 (which has been dubbed "the world's most famous equation"), he received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect". The latter was pivotal in establishing quantum theory.</p>
+              <p>Near the beginning of his career, Einstein thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics with the laws of the electromagnetic field. This led to the development of his special theory of relativity. He realized, however, that the principle of relativity could also be extended to gravitational fields, and with his subsequent theory of gravitation in 1916, he published a paper on the general theory of relativity.</p>
+              <p>He continued to deal with problems of statistical mechanics and quantum theory, which led to his explanations of particle theory and the motion of molecules. He also investigated the thermal properties of light which laid the foundation of the photon theory of light. In 1917, Einstein applied the general theory of relativity to model the large-scale structure of the universe.</p>
+              <p class="text-right"><em>Find out more about Albert Einstein from <a href="http://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a>.</em></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--/ tabs -->
+    </div>
+
+    <div class="footer">
+      <p><span class="glyphicon glyphicon glyphicon-copyright-mark"></span> Walker Co., Ltd.</p>
+    </div>
 
   <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery.avgrund/jquery.avgrund.js"></script>
+    <script src="/bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -505,6 +514,7 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
     <!-- build:js(.tmp) scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/smooth_scroll.js"></script>
+    <script src="scripts/jquery.backgroundpos.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -593,8 +603,11 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
       })(jQuery);
 
       $(function() {
-        $(window).scroll(function () {
+          var animating = false;
+          $(window).scroll(function () {
+
           var window_top = $(this).scrollTop();
+//          var animating = false;
           debug("window:: " + window_top);
           $("#tab-container > .sky-tabs >  ul > li").each(function(){
             var $self = $(this);
@@ -611,12 +624,114 @@ initialZoom="0.79" data-finalZoom="1" data-horizontalPosition="right" data-verti
               debug("end =>" + end);
               debug($self.attr('class'));
               if(window_top > start && window_top < end){
-                $self.css("background-position",  movable - movable * window_top/end  + "px center");
+//                $self.css("background-position",  movable - movable * window_top/end  + "px center");
+                $self.animate({"backgroundPosition":  movable - movable * window_top/end  + "px"},
+                  100, "swing", function(){animating = false});
               }
             });
           });
         });
       });
     </script>
+
+    <script>
+      $(function() {
+        $('#popup1').avgrund({
+          width: '80%', // max is 640px
+          height: '80%', // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-1'
+        });
+        $('#popup2').avgrund({
+          width: 640, // max is 640px
+          height: 350, // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-2'
+        });
+        $('#popup3').avgrund({
+          width: 640, // max is 640px
+          height: 350, // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-3'
+        });
+        $('#popup4').avgrund({
+          width: 640, // max is 640px
+          height: 350, // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-4'
+        });
+
+      });
+    </script>
+    <script>
+      $(function(){
+        $(window).load(function(){
+          $("#popup-1").mCustomScrollbar({
+            scrollInertia: 500,          //スクロール加速度 OSデフォルトと異なると使いにくいので0
+            autoHideScrollbar: false,  //マウスオーバーしていないときにスクロールバーを隠すか お好みで
+            scrollButtons: {
+              enable: true,                    //ボタンを出すか。個人的には不要（falseにしたら以下は指定不要）
+              scrollType: "continuous",  //ボタンを押してる間だけ進む
+            },
+            theme: "dark-thin"                     //テーマを選ぶ。 CSSでカスタマイズする場合は不要
+          });
+        });
+      });
+    </script>
+    <div id="popup-1">
+      <h2>StoQの人工知能</h2>
+      <div class="tag_content">
+
+      </div>
+      <p>
+        StoQは...
+        <div class="text-center">
+           <img src="images/stoq_cycle.png" />
+      </div>
+
+      </p>
+    </div>
+    <div id="popup-2">
+      <h2>問題のプラットフォーム</h2>
+      <p>
+        StoQは...
+      </p>
+    </div>
+    <div id="popup-3">
+      <h2>便利なメモ帳</h2>
+      <p>
+        StoQは...
+      </p>
+    </div>
+    <div id="popup-4">
+      <h2>最先端LMS</h2>
+      <p>
+        StoQは...
+      </p>
+    </div>
   </body>
 </html>
