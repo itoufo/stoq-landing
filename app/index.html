@@ -12,6 +12,7 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -384,9 +385,9 @@
               <h1>StoQにはいろんな顔があります</h1>
               <ul>
                 <li><h2><a id="popup1" href="#">人工知能搭載問題集</a></h2></li>
-                <li><h2>問題のプラットフォーム</h2></li>
-                <li><h2>便利なメモ帳</h2></li>
-                <li><h2>最先端LMS</h2></li>
+                <li><h2><a id="popup2" href="#">問題のプラットフォーム</a></h2></li>
+                <li><h2><a id="popup3" href="#">便利なメモ帳</a></h2></li>
+                <li><h2><a id="popup4" href="#">最先端LMS</a></h2></li>
               </ul>
             </div>
           </li>
@@ -395,7 +396,8 @@
               <h1>実質＆効率の追求</h1>
               <div class="row">
                 <div class="col-md-6 substantial">
-                  <h2 class="text-left">度が過ぎるほどの <span class="font-size-large">実質的評価</span></h2>
+                  <!--<h2 class="text-left">度が過ぎるほどの <span class="font-size-large">実質的評価</span></h2>-->
+                  <h2 class="text-left">度が過ぎるほどの実質的評価</h2>
                   <p>StoQは徹底的な統計評価によって、情報の陳腐化を撲滅します。</p>
                   <ul>
                     <li><h3>実質的な難易度評価</h3>
@@ -427,7 +429,8 @@
 
                 </div>
                 <div class="col-md-6 efficient">
-                  <h2 class="text-left"><span class="font-size-large">最も効率的な</span> 学習支援</h2>
+                  <!--<h2 class="text-left"><span class="font-size-large">最も効率的な</span> 学習支援</h2>-->
+                  <h2 class="text-left">最も効率的な学習支援</h2>
                   <p>StoQには最小の勉強時間で、最大限の知識を獲得するための支援機能が充実しています</p>
                   <ul>
                     <li><h3>忘却曲線に沿った学習スケジュール提案</h3>
@@ -486,6 +489,8 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/jquery.avgrund/jquery.avgrund.js"></script>
+    <script src="/bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -509,6 +514,7 @@
     <!-- build:js(.tmp) scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/smooth_scroll.js"></script>
+    <script src="scripts/jquery.backgroundpos.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -597,10 +603,11 @@
       })(jQuery);
 
       $(function() {
+          var animating = false;
           $(window).scroll(function () {
 
           var window_top = $(this).scrollTop();
-
+//          var animating = false;
           debug("window:: " + window_top);
           $("#tab-container > .sky-tabs >  ul > li").each(function(){
             var $self = $(this);
@@ -617,7 +624,9 @@
               debug("end =>" + end);
               debug($self.attr('class'));
               if(window_top > start && window_top < end){
-                $self.css("background-position",  movable - movable * window_top/end  + "px center");
+//                $self.css("background-position",  movable - movable * window_top/end  + "px center");
+                $self.animate({"backgroundPosition":  movable - movable * window_top/end  + "px"},
+                  100, "swing", function(){animating = false});
               }
             });
           });
@@ -628,8 +637,8 @@
     <script>
       $(function() {
         $('#popup1').avgrund({
-          width: 640, // max is 640px
-          height: 350, // max is 350px
+          width: '80%', // max is 640px
+          height: '80%', // max is 350px
           holderClass: 'popup1',
           showClose: true,
           showCloseText: 'Close',
@@ -639,12 +648,56 @@
           useTemplateTag: true,
           templateTag: '#popup-1'
         });
+        $('#popup2').avgrund({
+          width: 640, // max is 640px
+          height: 350, // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-2'
+        });
+        $('#popup3').avgrund({
+          width: 640, // max is 640px
+          height: 350, // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-3'
+        });
+        $('#popup4').avgrund({
+          width: 640, // max is 640px
+          height: 350, // max is 350px
+          holderClass: 'popup1',
+          showClose: true,
+          showCloseText: 'Close',
+          enableStackAnimation: true,
+          onBlurContainer: '.container',
+          windowScrollable: true,
+          useTemplateTag: true,
+          templateTag: '#popup-4'
+        });
+
       });
     </script>
     <div id="popup-1">
       <h2>StoQの人工知能</h2>
+      <div class="tag_content">
+
+      </div>
       <p>
         StoQは...
+        <div class="text-center">
+           <img src="images/stoq_cycle.png" />
+      </div>
+
       </p>
     </div>
     <div id="popup-2">
