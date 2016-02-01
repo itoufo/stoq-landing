@@ -166,6 +166,7 @@ body {
       content: none;
     }
     h1{
+      font-size: 20pt;
       margin-bottom: 5px;
     }
     h2{
@@ -229,6 +230,23 @@ body {
     }
   }
 }
+
 .avgrund-popin{
-  padding-top: 25px !important;
+  padding-top: 35px !important;
+  img{
+    width: 100%;
+  }
+}
+
+#tab-container{
+  background-color: rgba(128,128,128,0.3);
+  //padding-top: 15px;
+  //padding-bottom: 15px;
+}
+.avgrund-close{
+  font-size: 14pt !important;
+}
+
+.container{
+  width: 90%;
 }
