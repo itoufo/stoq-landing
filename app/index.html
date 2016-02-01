@@ -646,7 +646,10 @@
           onBlurContainer: '.container',
           windowScrollable: true,
           useTemplateTag: true,
-          templateTag: '#popup-1'
+          templateTag: '#popup-1',
+          activatedCallback: function(){
+            $("#popup-1").mCustomScrollbar();
+          }
         });
         $('#popup2').avgrund({
           width: 640, // max is 640px
@@ -685,6 +688,13 @@
           templateTag: '#popup-4'
         });
 
+      });
+    </script>
+    <script>
+      $(function(){
+        $(window).load(function(){
+          $("#popup-1").mCustomScrollbar();
+        });
       });
     </script>
     <div id="popup-1">
