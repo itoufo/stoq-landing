@@ -13,6 +13,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -57,6 +58,20 @@
     </script>
   </head>
   <body>
+    <div id="loading">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
     <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -494,6 +509,7 @@
     <script src="/bower_components/jquery.avgrund/jquery.avgrund.js"></script>
     <script src="/bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
     <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script src="/bower_components/materialize/bin/materialize.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -705,6 +721,11 @@
         });
       });
     </script>
+    <script>
+      $(window).load(function(){
+        $("#loading").hide();
+      });
+    </script>
     <div id="popup-1">
       <h2>StoQの人工知能</h2>
       <p>
@@ -771,7 +792,7 @@
       <p>
         そこで我々は、昔からずっと使われてきた問題集と単語帳に注目。<br>
         より効率よく勉強できて、反復学習による確かな成長をより実感できる。そんなツールを発明しました。
-      </p
+      </p>
       <p>
         あと、問題を創るには正しい理解が必要です。
       </p>
